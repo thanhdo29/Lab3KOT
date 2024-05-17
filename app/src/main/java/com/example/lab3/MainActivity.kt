@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -25,6 +26,7 @@ import androidx.compose.ui.unit.dp
 import com.example.lab3.ui.theme.Lab3Theme
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.ui.text.font.FontStyle
 
 
 class MainActivity : ComponentActivity() {
@@ -36,9 +38,9 @@ class MainActivity : ComponentActivity() {
             modifier = Modifier
                 .padding(0.dp, 16.dp)
                 .fillMaxWidth(),
-            color = Color.Blue,
-
-            textAlign = TextAlign.Center
+            color = Color.Black,
+            textAlign = TextAlign.Center,
+            fontWeight = FontWeight.Bold
         )
     }
 
@@ -94,7 +96,7 @@ class MainActivity : ComponentActivity() {
     @Preview(showBackground = true)
     @Composable
     fun PreviewGreeting(){
-        Greeting(name = "Đỗ Tuấn Thành")
+//        Greeting(name = "Đỗ Tuấn Thành")
 //        GreetingCard(msg = "Đỗ Tuấn Thành-PH34899")
         CounterCard()
     }
